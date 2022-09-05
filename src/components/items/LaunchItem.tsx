@@ -15,14 +15,18 @@ const LaunchItem: React.FC<{launch: launchesPast}> = ({launch}) => {
     borderColor={useColorModeValue('blackAlpha.100','whiteAlpha.100')}
     _hover={{bgColor: 'rgba(127,127,255,0.2)'}}
     >
-        <Box p={3} w='full' style={{aspectRatio: '1/1'}}>
-        <Img 
-        src={launch.links.flickr_images.length > 0 ? launch.links.flickr_images[0] : rocketsvg}
-        width={'full'}
-        height={'full'}
-        rounded={10}
-        objectFit={'cover'}
+        <Box 
+        p={3} 
+        w='full'>
+        <Box style={{aspectRatio: '1/1'}}>
+          <Img 
+          src={launch.links.flickr_images.length > 0 ? launch.links.flickr_images[0] : rocketsvg}
+          width={'full'}
+          height={'full'}
+          rounded={10}
+          objectFit={'cover'}
         />
+        </Box>
         </Box>
         <Box p={3}>
             <Heading 

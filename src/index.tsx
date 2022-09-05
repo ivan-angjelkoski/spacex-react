@@ -25,7 +25,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <ApolloProvider client={client}>
-    <ChakraProvider theme={theme}>
+    <ChakraProvider resetCSS theme={theme}>
       <ColorModeProvider options={{initialColorMode: 'dark',useSystemColorMode: false}}/>
     <App />
     </ChakraProvider>
